@@ -20,6 +20,7 @@ export default function App() {
     setUserName(name);
     setCurrentScreen('home');
   };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#E8E0F5] via-[#F5F3FA] to-[#E0F5F5] flex items-center justify-center p-4">
@@ -96,3 +97,4 @@ export default function App() {
     </div>
   );
 }
+// screen fingerprint working...
