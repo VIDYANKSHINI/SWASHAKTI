@@ -67,11 +67,11 @@ export function Team({ onNavigate }: TeamProps) {
     },
     {
       id: 4,
-      name: 'Sunita Bai',
+      name: 'Sunita Kumari',
       role: 'Quality Inspector',
       village: 'Khandwa Village',
       phone: '+91 98765 43213',
-      email: 'sunita.bai@swashakti.in',
+      email: 'sunita.kumari@swashakti.in',
       batchesCompleted: 115,
       passRate: 87,
       rating: 4.3,
