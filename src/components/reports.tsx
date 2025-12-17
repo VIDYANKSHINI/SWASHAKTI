@@ -34,7 +34,7 @@ export function Reports({ onNavigate }: ReportsProps) {
     {
       batchId: 'SW-2846',
       date: '12 Dec 2024',
-      time: '09:15 AM',
+      time: '11:15 AM',
       totalPads: 50,
       passed: 45,
       failed: 5,
