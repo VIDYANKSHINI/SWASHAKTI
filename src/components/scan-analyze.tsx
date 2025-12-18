@@ -198,7 +198,7 @@ export function ScanAnalyze({ onNavigate, onScanComplete }: ScanAnalyzeProps) {
             >
               <div className="bg-black/70 backdrop-blur-xl rounded-[25px] p-5 border border-white/10">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-white">Analyzing Quality...</span>
+                  <span className="text-white">Analyzing Quality....</span>
                   <span className="text-[#4FA6A7]">{progress}%</span>
                 </div>
                 
