@@ -196,6 +196,57 @@ export function Login({ onLogin }: LoginProps) {
             </div>
           </>
         ) : (
+          import cv2
+import face_recognition
+import numpy as np
+
+# Load known face
+known_image = face_recognition.load_image_file("known_face.jpg")
+known_encoding = face_recognition.face_encodings(known_image)[0]
+
+known_faces = [known_encoding]
+
+# Open webcam
+video_capture = cv2.VideoCapture(0)
+
+print("📸 Face Login Started... Press 'q' to quit")
+
+authenticated = False
+
+while True:
+    ret, frame = video_capture.read()
+    rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+    # Detect faces
+    face_locations = face_recognition.face_locations(rgb_frame)
+    face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
+
+    for face_encoding in face_encodings:
+        matches = face_recognition.compare_faces(known_faces, face_encoding, tolerance=0.5)
+        face_distance = face_recognition.face_distance(known_faces, face_encoding)
+
+        if matches[0]:
+            authenticated = True
+            cv2.putText(frame, "Login Successful ✅",
+                        (50, 50), cv2.FONT_HERSHEY_SIMPLEX,
+                        1, (0, 255, 0), 2)
+        else:
+            cv2.putText(frame, "Access Denied ❌",
+                        (50, 50), cv2.FONT_HERSHEY_SIMPLEX,
+                        1, (0, 0, 255), 2)
+
+    cv2.imshow("Face Login System", frame)
+
+    if authenticated:
+        print("✅ User Authenticated")
+        break
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Release resources
+video_capture.release()
+cv2.destroyAllWindows()
 
 
         {/* Footer */}
