@@ -130,7 +130,7 @@ export function ScanAnalyze({ onNavigate, onScanComplete }: ScanAnalyzeProps) {
               {!isScanning && (
                 <div className="text-center text-white/80">
                   <Maximize2 className="mx-auto mb-2" />
-                  Align Pad Here
+                  Align Pad Here for Scanning
                 </div>
               )}
             </div>
