@@ -34,3 +34,9 @@ export function StatCard({
     </motion.div>
   );
 }
+
+const recentChecks = [
+  { id: 2847, score: 94, time: '2 mins ago', passed: true },
+  { id: 2846, score: 91, time: '8 mins ago', passed: true },
+  { id: 2845, score: 67, time: '15 mins ago', passed: false }
+];
