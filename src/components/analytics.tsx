@@ -55,7 +55,7 @@ export function Analytics({ onNavigate }: AnalyticsProps) {
           </button>
           <div className="flex-1">
             <h2 className="text-white text-xl">Analytics Dashboard</h2>
-            <p className="text-white/90 text-sm">Khandwa Village Production</p>
+            <p className="text-white/90 text-sm">Sadashiv peth,Pune</p>
           </div>
           <button className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
             <Calendar className="w-5 h-5 text-white" />

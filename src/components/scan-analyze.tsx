@@ -183,7 +183,7 @@ export function ScanAnalyze({ onNavigate, onScanComplete }: ScanAnalyzeProps) {
                 onClick={handleNewScan}
                 className="py-4 rounded-2xl bg-gradient-to-r from-[#4FA6A7] to-[#3D8B8C] text-white"
               >
-                ➕ Save as New Sample
+                ➕ Save as New Sample(new record)
               </button>
 
               <button
