@@ -250,7 +250,7 @@ export function Reports({ onNavigate }: ReportsProps) {
                   <span className="text-[#666666] text-xs">{report.inspector}</span>
                 </div>
                 <button className="text-[#4FA6A7] text-xs flex items-center gap-1">
-                  View Details
+                  View Detail Analysis
                   <ChevronRight className="w-3 h-3" />
                 </button>
               </div>
